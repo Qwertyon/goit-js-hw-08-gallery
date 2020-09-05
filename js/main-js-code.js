@@ -61,12 +61,10 @@ function onLinkClick(event) {
 lightboxRef.addEventListener("click", onCloseClick);
 
 function onCloseClick(event) {
-  console.log(event.target);
   if (
     event.target === lightboxOverlayRef ||
     event.target === lightboxCloseBtnRef
   ) {
-    console.log(event.target);
     lightboxRef.classList.remove("is-open");
     lightboxImageRef.setAttribute("src", " ");
     lightboxImageRef.setAttribute("alt", " ");
